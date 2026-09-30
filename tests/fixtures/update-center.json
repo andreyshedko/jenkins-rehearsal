@@ -1,0 +1,71 @@
+{
+  "generationTimestamp": "2026-09-01T00:00:00Z",
+  "plugins": {
+    "git": {
+      "name": "git",
+      "title": "Git",
+      "version": "5.10.1",
+      "requiredCore": "2.504.3",
+      "dependencies": [
+        { "name": "credentials", "version": "1400.vabc", "optional": false }
+      ]
+    },
+    "credentials": {
+      "name": "credentials",
+      "title": "Credentials",
+      "version": "1450.vdef",
+      "requiredCore": "2.479.1",
+      "dependencies": []
+    },
+    "legacy": {
+      "name": "legacy",
+      "title": "Fixture legacy plugin",
+      "version": "1.2",
+      "requiredCore": "2.100",
+      "dependencies": []
+    },
+    "vulnerable": {
+      "name": "vulnerable",
+      "title": "Fixture advisory plugin",
+      "version": "2.0",
+      "requiredCore": "2.100",
+      "dependencies": []
+    },
+    "conflict": {
+      "name": "conflict",
+      "title": "Fixture dependency conflict",
+      "version": "2",
+      "requiredCore": "2.100",
+      "dependencies": [
+        { "name": "credentials", "version": "9999.vfff", "optional": false }
+      ]
+    },
+    "cycle-a": {
+      "name": "cycle-a",
+      "title": "Cycle A",
+      "version": "1",
+      "requiredCore": "2.100",
+      "dependencies": [{ "name": "cycle-b", "version": "1", "optional": false }]
+    },
+    "cycle-b": {
+      "name": "cycle-b",
+      "title": "Cycle B",
+      "version": "1",
+      "requiredCore": "2.100",
+      "dependencies": [{ "name": "cycle-a", "version": "1", "optional": false }]
+    }
+  },
+  "deprecations": { "legacy": { "url": "https://www.jenkins.io/doc/" } },
+  "warnings": [
+    {
+      "id": "FIXTURE-SECURITY-1",
+      "name": "vulnerable",
+      "type": "plugin",
+      "message": "Fixture advisory; not a real vulnerability",
+      "url": "https://www.jenkins.io/security/",
+      "versions": [
+        { "firstVersion": "1.0", "lastVersion": "1.5", "pattern": "1[.][0-5]" }
+      ]
+    }
+  ]
+}

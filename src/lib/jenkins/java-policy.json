@@ -1,0 +1,15 @@
+{
+  "source": "https://www.jenkins.io/doc/book/platform-information/support-policy-java/",
+  "reviewedAt": "2026-09-30",
+  "rows": [
+    { "lts": "2.555.1", "weekly": "2.545", "supported": [21, 25] },
+    { "lts": "2.541.1", "weekly": "2.534", "supported": [17, 21, 25] },
+    { "lts": "2.479.1", "weekly": "2.463", "supported": [17, 21] },
+    { "lts": "2.426.1", "weekly": "2.419", "supported": [11, 17, 21] },
+    { "lts": "2.361.1", "weekly": "2.357", "supported": [11, 17] },
+    { "lts": "2.346.1", "weekly": "2.340", "supported": [8, 11, 17] },
+    { "lts": "2.164.1", "weekly": "2.164", "supported": [8, 11] },
+    { "lts": "2.60.1", "weekly": "2.54", "supported": [8] },
+    { "lts": "1.625.1", "weekly": "1.612", "supported": [7] }
+  ]
+}
